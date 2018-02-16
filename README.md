@@ -1,0 +1,1 @@
+This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app) and utilizes [reason-scripts](https://github.com/reasonml-community/reason-scripts).

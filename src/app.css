@@ -1,0 +1,14 @@
+header {
+  background: #fff;
+  padding: 8px;
+  border-bottom: 1px solid #666;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.logo {
+  height: 64px;
+}
