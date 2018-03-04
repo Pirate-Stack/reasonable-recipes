@@ -4,17 +4,12 @@
 
 let component = ReasonReact.statelessComponent("App");
 
-
-let curry : RecTypes.recipe = {
+let curry: RecTypes.recipe = {
   id: 1,
   name: "Thai Green Curry",
   image: "https://imgur.com/hwP6rg2.jpg",
   ingredients: [|
-    {
-      name: "canned coconut milk (do not shake)",
-      qty: 13.5,
-      measurement: "oz"
-    },
+    {name: "canned coconut milk (do not shake)", qty: 13.5, measurement: "oz"}
   |],
   directions: [|
     "Open the can of coconut milk without shaking it. Spoon 6 tablespoons of the coconut cream from the top of the can into a medium saucepan. Pour remaining contents of can into a medium bowl, and mix well. In a medium bowl, combine vegetable stock, soy sauce, and palm or brown sugar. Stir until the sugar is dissolved.        ",
@@ -24,17 +19,17 @@ let curry : RecTypes.recipe = {
   |]
 };
 
-let pancake : RecTypes.recipe = {
+let pancake: RecTypes.recipe = {
   id: 2,
   name: "Dutch Baby",
   image: "",
   ingredients: [||],
-  directions: [||],
+  directions: [||]
 };
 
-let make = (_children) => {
+let make = _children => {
   ...component,
-  render: (_self) =>
+  render: _self =>
     <div>
       <header>
         <div className="container">
@@ -42,8 +37,8 @@ let make = (_children) => {
         </div>
       </header>
       <div className="container">
-      <RecipeList recipe=curry />
-      <RecipeList recipe=pancake />
+        <RecipeList recipe=curry />
+        <RecipeList recipe=pancake />
       </div>
     </div>
 };
